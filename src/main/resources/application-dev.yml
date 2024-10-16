@@ -1,0 +1,16 @@
+server:
+  port: 81
+xxl:
+  job:
+    admin:
+      addresses: http://116.205.112.70:8080/xxl-job-admin
+    executor:
+      address:
+      appname: xxl-job-study
+      ip:
+      #这个端口是项目启动后对应xxl-job的执行器端口，即与xxl-job联系的端口
+      port: 9999
+      logpath: /Users/fuzhengwei/itstack/data/applogs/xxl-job/jobhandler
+      logretentiondays: 50
+    #    默认对应xxl-job里面的设置参数
+    accessToken: default_token
